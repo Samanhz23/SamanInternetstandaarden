@@ -1,0 +1,390 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+
+h1, h2{
+    margin-left: 1.6em;
+}
+
+h3 { 
+    margin-left: 2em;
+}
+
+p {
+    font-size: larger;
+    margin-left: 2em;
+}
+.animatie {
+    animation: inglijden .8s ease 0s 1 normal none
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 79, 79);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: color 0.3s ease-in-out;
+    letter-spacing: 1px;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color:rgb(172, 0, 0)
+}
+
+nav a.actief {
+    color: gold;
+}
+
+section {
+    padding: 1%; 
+}
+
+footer {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 0%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    display:flex; 
+    justify-content: center;
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color:rgb(172, 0, 0)
+}
+
+footer p {
+    padding: 1%
+}
+
+/* Hier eindigt algemeen */
+/* Hier begint intropage */
+@keyframes inglijden {
+
+    0% {
+        transform: translateY(-200%) scale(.1);
+        
+    }
+
+    50% {}
+
+    100% {
+        transform: translate(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.animatie {
+    animation: inglijden .8s ease 0s 1 normal none
+}
+/* Ik heb deze animatie van een tweede jaar gekregen */
+
+.intro1{
+    background-color: rgb(240, 0, 0);
+    color: #fff;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    margin-top: 1em;
+    border-style: double;
+}
+
+.intro2{
+    background-color: rgb(220, 0, 0);
+    color: #fff;
+    margin-bottom: 5em;
+    border-radius: 10px;
+    border-style: double;
+}
+
+
+.intro2 img {
+    margin: 0 auto;
+    width: 30em;
+    display: block;
+}
+
+/* Hier eindigt intropage */
+/* Hier begint liedjes page */
+
+@keyframes omhoogomlaag{
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+.animatie4 {
+    animation-name: omhoogomlaag;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: normal;
+}
+.liedjespage4 {
+    display: flex;
+    background-color: rgb(240, 0, 0);
+    margin-bottom: 5em;
+    border-radius: 10px;
+    border-style: double;
+    justify-content: space-between;
+    color: White;
+    margin-bottom: 5em;
+    font-size: larger;
+}
+
+.liedjespage4 img {
+    width: 20vw;
+    height: 20vw;
+    padding-left: 2em;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+}
+
+.liedjespage4 div {
+    text-align: left;
+    margin-left: 1.5em;
+}
+
+.liedjespage4 div {
+    display: flex;
+}
+
+.liedjespage4 div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.liedjespage4 div div div { 
+    display: flex;
+    flex-direction: row;
+}
+
+figcaption {
+    padding-bottom: 1em;
+    margin-left: 15px;
+}
+/* Hier eindigt liedjes page */
+/* Hier begint geschiedenis page */
+
+@keyframes slideinleft {
+    from {
+        transform: translateX(-1000px);
+
+    }
+
+    to {
+        transform: translateX(1000px);
+
+    } 
+}
+
+.animatie2 {
+    animation-name: slideinleft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: normal;
+
+}
+/* geleerd van https://www.youtube.com/watch?v=SgmNxE9lWcY */
+
+.ajaxgeschiedenis1 {
+    background-color: rgb(240, 0, 0);
+    margin-bottom: 5em;
+    border-radius: 10px;
+    border-style: double;
+    color: White;
+    margin-bottom: 5em;
+
+}
+
+.ajaxgeschiedenis1 img {
+    border: 5px solid rgb(255, 79, 79);
+    width: 45em;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.ajaxgeschiedenis2 {
+    background-color: rgb(220, 0, 0);
+    margin-bottom: 5em;
+    border-radius: 10px;
+    border-style: double;
+    color: White;
+    margin-bottom: 5em;
+}
+
+.ajaxgeschiedenis2 img {
+    border: 5px solid rgb(255, 79, 79);
+    width: 25em;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.feyenoordgeschiedenis1 {
+    background-color: rgb(240, 0, 0);
+    margin-bottom: 5em;
+    border-radius: 10px;
+    border-style: double;
+    color: White;
+    margin-bottom: 5em;
+
+}
+
+.feyenoordgeschiedenis1 img {
+    border: 5px solid rgb(255, 79, 79);
+    width: 25em;
+    display: block;
+    margin: 0 auto;
+}
+
+.geschiedenispsv1 {
+    background-color: rgb(220, 0, 0);
+    margin-bottom: 5em;
+    border-radius: 10px;
+    border-style: double;
+    color: White;
+    margin-bottom: 5em;
+
+}
+
+.geschiedenispsv1 img {
+    border: 5px solid rgb(255, 79, 79);
+    width: 25em;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/* Hier eindigt geschiedenis page */
+/* Hier begint prijzen page */
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to { 
+        transform: rotate(360deg);
+    }
+
+}
+
+.animatie3 {
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: normal;
+}
+
+.prijzenajax {
+    background-color: rgb(240, 0, 0);
+    margin-bottom: 5em;
+    border-radius: 10px;
+    border-style: double;
+    color: White;
+    margin-bottom: 5em;
+    font-size: larger;
+
+}
+
+.prijzenajax iframe{
+    margin: 0 auto;
+    display: block;
+    width: 560px;
+    height: 315px;
+}
+
+.prijzenpsv {
+    background-color: rgb(220, 0, 0);
+    margin-bottom: 5em;
+    border-radius: 10px;
+    border-style: double;
+    color: White;
+    margin-bottom: 5em;
+    font-size: larger;
+}
+
+.prijzenpsv iframe {
+    margin: 0 auto;
+    display: block;
+    width: 560px;
+    height: 315px;
+}
+
+.prijzenfeyenoord {
+    background-color: rgb(240, 0, 0);
+    margin-bottom: 5em;
+    border-radius: 10px;
+    border-style: double;
+    color: White;
+    margin-bottom: 5em;
+    font-size: larger;
+}
+
+.prijzenfeyenoord iframe {
+    margin: 0 auto;
+    display: block;
+    width: 560px;
+    height: 315px;
+}
+
+ul {
+margin-left: 1.1em;
+}
+
